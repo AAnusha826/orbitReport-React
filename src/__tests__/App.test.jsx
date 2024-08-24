@@ -62,9 +62,11 @@ describe("Final App function should contain a TABLE with values in both headers 
 
   test('renders Table Cells for Type', () => {
     render(<Table sat={testData} />);
-    const element = screen.getByText(/Test-Probe/i);
+    const types = ["Low", "Medium", "High"];
+  types.forEach(type => {
+    const element = screen.getByText(new RegExp(type, 'i'));
     expect(element).toBeInTheDocument();
   });
 
-
+  });
 });
