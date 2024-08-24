@@ -3,7 +3,7 @@ import App from '../App';
 import testData from './testData';
 import Table from '../components/Table';
 import { describe, test } from 'vitest';
-
+//Banner test
 describe("Final App function should contain a BANNER with title", () => {
 
   test('renders Banner with h1 text', () => {
@@ -12,6 +12,8 @@ describe("Final App function should contain a BANNER with title", () => {
     expect(element).toBeInTheDocument();
   });
   });
+
+  //Buttons Test
 
   describe("Final App function should contain 4 BUTTONS: Low, Medium, High, and All orbits", () => {
 
@@ -39,6 +41,8 @@ describe("Final App function should contain a BANNER with title", () => {
     expect(element).toBeInTheDocument();
   });
 });
+
+//Table test
 
 describe("Final App function should contain a TABLE with values in both headers and cells", () => {
 
